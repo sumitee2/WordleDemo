@@ -11,6 +11,9 @@
 		190C348127B568A100F2D365 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190C348027B568A100F2D365 /* ContentView.swift */; };
 		190C348327B568A300F2D365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 190C348227B568A300F2D365 /* Assets.xcassets */; };
 		190C348627B568A300F2D365 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 190C348527B568A300F2D365 /* Preview Assets.xcassets */; };
+		190C349627B7A3C700F2D365 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190C349527B7A3C700F2D365 /* StringExtensions.swift */; };
+		190C349927B839F900F2D365 /* ViewModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190C349827B839F800F2D365 /* ViewModelo.swift */; };
+		190C349C27B84E2900F2D365 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190C349B27B84E2900F2D365 /* WordList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		190C348227B568A300F2D365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		190C348527B568A300F2D365 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		190C348727B568A300F2D365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		190C349527B7A3C700F2D365 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		190C349827B839F800F2D365 /* ViewModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelo.swift; sourceTree = "<group>"; };
+		190C349B27B84E2900F2D365 /* WordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +60,12 @@
 			children = (
 				190C347E27B568A100F2D365 /* WordleDemoApp.swift */,
 				190C348027B568A100F2D365 /* ContentView.swift */,
+				190C349827B839F800F2D365 /* ViewModelo.swift */,
+				190C349B27B84E2900F2D365 /* WordList.swift */,
 				190C348227B568A300F2D365 /* Assets.xcassets */,
 				190C348727B568A300F2D365 /* Info.plist */,
 				190C348427B568A300F2D365 /* Preview Content */,
+				190C349527B7A3C700F2D365 /* StringExtensions.swift */,
 			);
 			path = WordleDemo;
 			sourceTree = "<group>";
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190C349627B7A3C700F2D365 /* StringExtensions.swift in Sources */,
 				190C348127B568A100F2D365 /* ContentView.swift in Sources */,
+				190C349927B839F900F2D365 /* ViewModelo.swift in Sources */,
 				190C347F27B568A100F2D365 /* WordleDemoApp.swift in Sources */,
+				190C349C27B84E2900F2D365 /* WordList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +289,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sumit.WordleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -299,6 +312,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sumit.WordleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

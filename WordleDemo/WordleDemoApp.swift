@@ -12,6 +12,9 @@ struct WordleDemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    print("appear")
+                }
         }
     }
 }
